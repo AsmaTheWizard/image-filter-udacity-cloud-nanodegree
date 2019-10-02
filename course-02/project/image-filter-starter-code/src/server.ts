@@ -30,6 +30,25 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
   /**************************************************************************** */
 
   //! END @TODO1
+  app.get("/filteredimage", async (req, res) => {
+    let { image_url } = req.query;
+
+    //validate the image_url query
+    if (image_url.match(/\.(jpeg|jpg|gif|png)$/) == null) {
+        return res.status(400).send({ message: 'Only image are allowed' });
+    }
+    //call filterImageFromURL(image_url) to filter the image
+    filterImageFromURL(image_url).then((res_content) => {
+      //send the resulting file in the response
+      res.status(200).sendFile(res_content);
+      //deletes any files on the server on finish of the response
+      res.on('finish', function () {
+        deleteLocalFiles([res_content]);
+      })
+    });
+    
+  });
+
   
   // Root Endpoint
   // Displays a simple message to the user

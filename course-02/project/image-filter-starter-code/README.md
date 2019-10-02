@@ -1,5 +1,11 @@
 # Udagram Image Filtering Microservice
 
+## Git
+[Project Repository](https://github.com/AsmaTheWizard/cloud-developer.git)
+
+## Project URL
+[Project URL](udagram-asma-dev-dev.us-west-2.elasticbeanstalk.com)
+
 ## Tasks
 
 ### Setup Node Environment
