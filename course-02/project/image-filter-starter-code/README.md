@@ -1,10 +1,10 @@
 # Udagram Image Filtering Microservice
 
 ## Git
-[Project Repository](https://github.com/AsmaTheWizard/cloud-developer.git)
+[Project Repository](https://github.com/AsmaTheWizard/image-filter-udacity-cloud-nanodegree/tree/dev/course-02/project/image-filter-starter-code)
 
 ## Project URL
-[Project URL](udagram-asma-dev-dev.us-west-2.elasticbeanstalk.com)
+[udagram-asma-dev-dev.us-west-2.elasticbeanstalk.com](udagram-asma-dev-dev.us-west-2.elasticbeanstalk.com)
 
 ## Tasks
 
